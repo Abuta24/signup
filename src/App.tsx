@@ -17,7 +17,7 @@ function App() {
   }
 
 
-  const { register, handleSubmit, formState: { errors } } = useForm<SubmitType>({
+  const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(schema)
   });
 
@@ -83,7 +83,7 @@ function App() {
                     {...register('password')}
                 />
                 {errors.password && <p className='error'>{errors.lastName?.message}</p>}
-                <button onClick={onSubmit}>CLAIM YOUR FREE TRIAL</button>
+                <button type='submit'>CLAIM YOUR FREE TRIAL</button>
                 <p className='last'>By clicking the button, you are agreeing to our <span className='terms'>Terms and Services</span></p>
             </form>
           </div>
