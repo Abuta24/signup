@@ -84,7 +84,8 @@ function App() {
                 />
                 {errors.password && <p className='error'>{errors.lastName?.message}</p>}
                 <button type='submit'>CLAIM YOUR FREE TRIAL</button>
-                <p className='last'>By clicking the button, you are agreeing to our <span className='terms'>Terms and Services</span></p>
+                <p className='last'>By clicking the button, you are agreeing to our <span className='terms'>Terms and Services</span></p> 
+                {/* rame */}
             </form>
           </div>
         </div>
