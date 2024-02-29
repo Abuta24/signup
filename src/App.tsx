@@ -12,7 +12,7 @@ function App() {
     password: String
   }
 
-  const onSubmit = (data: FormData) => {
+  const onSubmit = (data: SubmitType) => {
     console.log(data)
   }
 
