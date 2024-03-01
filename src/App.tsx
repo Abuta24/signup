@@ -41,7 +41,7 @@ function App() {
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: '95% center'
                       }}
-                        type={'text'}
+                        type='text'
                         placeholder="First Name"
                         {...register("firstName")}
                 />
@@ -53,7 +53,7 @@ function App() {
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: '95% center'
                     }}
-                    type={'text'}
+                    type='text'
                     placeholder="Last Name"
                     {...register('lastName')}
                 />
