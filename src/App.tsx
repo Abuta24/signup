@@ -45,7 +45,7 @@ function App() {
                         placeholder="First Name"
                         {...register("firstName")}
                 />
-                {errors.firstName && <p className='error'>{errors.firstName?.message}</p>}
+                {errors.firstName && <p className='error'>{errors.firstName.message}</p>}
                 <input
                     style={{
                         borderColor: errors?.lastName?.message && 'red',
@@ -57,7 +57,7 @@ function App() {
                     placeholder="Last Name"
                     {...register('lastName')}
                 />
-                {errors.lastName && <p className='error'>{errors.lastName?.message}</p>}
+                {errors.lastName && <p className='error'>{errors.lastName.message}</p>}
                 <input
                     style={{
                         borderColor: errors?.email?.message && 'red' ,
@@ -69,7 +69,7 @@ function App() {
                     placeholder='Email'
                     {...register('email')}
                 />
-                {errors.email && <p className='error'>{errors.email?.message}</p>}
+                {errors.email && <p className='error'>{errors.email.message}</p>}
                 <input
                     id='rame'
                     style={{
@@ -82,7 +82,7 @@ function App() {
                     placeholder='Password'
                     {...register('password')}
                 />
-                {errors.password && <p className='error'>{errors.lastName?.message}</p>}
+                {errors.password && <p className='error'>{errors.password.message}</p>}
                 <button type='submit'>CLAIM YOUR FREE TRIAL</button>
                 <p className='last'>By clicking the button, you are agreeing to our <span className='terms'>Terms and Services</span></p> 
             </form>
